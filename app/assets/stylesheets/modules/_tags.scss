@@ -1,0 +1,26 @@
+.tags-wrapper {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 0.5em 1em;
+    background: grey;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-family: Arial;
+    &:hover {
+        text-decoration: none;
+        color: red;
+    }
+}
+
+

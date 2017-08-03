@@ -1,0 +1,49 @@
+<style type="text/css">
+  body,
+  html, 
+  .body {
+    background: #f3f3f5 !important;
+  }
+</style>
+
+<container>
+
+<h2 style="color: rgba(0,0,0,0.8);
+            font-family: 'Open Sans', sans-serif;
+            font-size; 22px;
+            font-weight: normal;
+            line-height: 24px;
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            ">Welcome to Service Design KIT!
+  </h2>
+  <row>
+    <columns>
+
+      <spacer size="32"></spacer>
+
+      <p style="text-align: center; font-family: 'Open Sans', sans-serif; font-size: 18px;
+            color: rgba(0,0,0,0.6); line-height: 1.4;">
+  Hi <strong style="color: #2E64FE;"><%= @user.username %></strong>, thank you for becoming a member of the Service Design KIT Community!
+  <br>You can confirm your account email through the link below:<br> 
+      </p>
+        <center>
+
+        <%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token)%>
+        </center>
+      
+       <!--  <center>
+       <button class="large expand" href="#">Reset Password</button>
+        </center> -->
+      <hr/>
+
+      <p style =" font-family: 'Open Sans', sans-serif; font-size: 11px; color: rgba(0,0,0,0.6)">
+     <!--  <small>FOOTER</a>.</small> -->
+      </p>
+    </columns>
+  </row>
+
+  <spacer size="16"></spacer>
+</container>

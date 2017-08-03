@@ -1,0 +1,6 @@
+%h1 Edit Profile
+= form_for(@user, html: {multipart: true}) do |f|
+  = f.label :username
+  = f.text_field :username
+  = f.file_field :avatar
+  = f.submit "Save Changes"

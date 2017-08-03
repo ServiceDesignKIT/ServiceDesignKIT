@@ -1,0 +1,47 @@
+/*
+*= require 'masonry/transitions'
+*= require 'masonry/basic'
+*= require_tree .
+*= require_self
+*= require select2
+*= require select2-bootstrap
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//Modules
+
+@import "modules/buttons";
+@import "modules/avatar";
+@import "modules/technique_panel";
+@import "modules/header";
+@import "modules/tags";
+@import "modules/comment";
+
+.paragraph1 {
+	margin-left: 5px;
+	margin-right: 500px;
+	margin-top: 50px;
+}
+
+.paragraph2 {
+	margin-left: 5px;
+	margin-right: 500px;
+}
+
+
+.about-container {
+	min-height: 100%;
+	height: 100vh;
+
+}
+
+.contact-container {
+	min-height: 100%;
+	height: 100vh;
+
+}
+
+.contact {
+	margin-left: 5px;
+}

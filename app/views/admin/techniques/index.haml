@@ -1,0 +1,4 @@
+= react_component("AdminHeader", props: { user: current_user })
+.container
+  %h1 Techniques
+  = react_component("AdminPosts", props: { user: current_user, posts: Post.order(created_at: :desc) })

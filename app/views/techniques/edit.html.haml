@@ -1,0 +1,6 @@
+= react_component("UserHeader", props: { withoutSearch: true, user: current_user })
+.post-box
+  = react_component("EditPost", props: { categories: @categories, post: @post_json } )
+  .clear
+
+= react_component("Footer")

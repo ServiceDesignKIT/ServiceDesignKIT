@@ -1,0 +1,17 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    = link_to "Designapp", root_path, class: "navbar-brand",  id: "logo"
+    / link to post form in navbar
+    %ul.nav.navbar-nav.navbar-right
+      %li.new-technique-button
+        = link_to "Submit a technique", new_post_path, class: "button"
+      / helper method from devise
+      - if user_signed_in?
+        %li.current-user-avatar
+          = link_to avatar_for(current_user, size: 40), current_user
+        %li.sign-out-button
+          = link_to "Sign out", destroy_user_session_path, class: "button", method: :delete
+      - else
+        %li.login-signup-button
+          = link_to "Login /Sign up", new_user_session_path, class: "button"
+

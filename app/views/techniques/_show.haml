@@ -1,0 +1,43 @@
+.col-sm-6.col-sm-offset-3
+  %i.fa.fa-braille{"aria-hidden" => "true"}
+  .row
+    .fa-camera-retro
+    %i.fa.fa-address-card-o{"aria-hidden" => "true"}
+    = image_tag @post.image.url(:medium)
+    - post = User.last.favorite_posts.include?(@post) ? @post.as_json.merge(is_favorite: true) : @post
+    = react_component("AddToFavorite", props: { post: post} )
+    %h1
+      = @post.title
+  .row
+    %p
+      = @post.body
+  .row
+    .tags-wrapper
+      -@post.subcategories.any?
+      -@post.subcategories.each do |tag|
+        =link_to tag.name, tag_path(tag.name), class: "tag"
+      -@post.freetags.any?
+      -@post.freetags.each do |tag|
+        =link_to tag.name, tag_path(tag.name), class: "tag"
+  .row
+    - if current_user && current_user&.is_admin?
+      = link_to "Back", admin_root_path, class: "btn btn-default"
+    - else
+      = link_to "Back", root_path, class: "btn btn-default"
+    = link_to 'Edit', edit_post_path, class: "btn btn-warning"
+    = link_to 'Delete', post_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger"
+  .row
+    .post-bottom
+      - if @post.comments
+        = render @post.comments, post: @post
+  .row
+    .comment-like-form.row
+      .like-button.col-sm-1
+        %span
+      .comment-form.col-sm-11
+        -if user_signed_in?
+          = form_for [@post, @post.comments.build] do |f|
+            = f.text_field :content, placeholder: 'Add a comment...', class:"comment_content", id: "comment_content_#{@post.id}"
+          / = form_for [@post, @post.comments.new] do |f|
+          /   = f.text_field :content, size: 50, placeholder: 'Add a comment...'
+

@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ServiceDesignKIT
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css", :rel => "stylesheet"}/
+  %body
+    =# render "layouts/header"
+    / from devise
+    = hidden_field_tag :notice, value: notice
+    = hidden_field_tag :alert, value: alert
+    / from devise
+    = yield
+
+ 
