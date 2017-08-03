@@ -51,11 +51,11 @@ echo ‘if which rbenv > /dev/null; then eval “$(rbenv init -)”; fi’ >> ~/
 source ~/.bash_profile
 ```
 
-Install Ruby 2.3.0 which is required by the app:
+Install Ruby 2.4.0 which is recommended for the app:
 
 ```
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.4.0
+rbenv global 2.4.0
 ruby -v
 ```
 
@@ -64,7 +64,7 @@ ruby -v
 Installing Rails is really simple:
 
 ```
-gem install rails -v 4.2.4
+gem install rails -v 5.0.2
 rbenv rehash
 rails -v
 ```
