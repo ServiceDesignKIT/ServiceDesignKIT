@@ -1,6 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   # Code is not reloaded between requests.
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   host = 'https://immense-spire-40055.herokuapp.com'
