@@ -16,9 +16,13 @@ If your keen to gain new skills in those mentioned programming-languages, framew
 
 * [Freecodecamp](https://www.freecodecamp.org/)
 
-* [Ruby on Rails Tutorial](https://www.railstutorial.org/book)
+* [Fundatemental Ruby on Rails Tutorial](https://www.railstutorial.org/book)
 
-* [React](https://facebook.github.io/react/tutorial/tutorial.html)
+* [Screencasts to different RoR Topics](https://rubyplus.com/search?term=modal)
+
+* [Information on React](https://facebook.github.io/react/tutorial/tutorial.html)
+
+* [Basic React Tutorial](https://tylermcginnis.com/)
 
 * [React on Rails](https://github.com/shakacode/react_on_rails)
 
