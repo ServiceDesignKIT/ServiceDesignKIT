@@ -12,11 +12,15 @@ If your keen to gain new skills in those mentioned programming-languages, framew
 
 ## Useful Links
 
+* [Application](https://servicedesignkit.herokuapp.com/)
+
 * [Freecodecamp](https://www.freecodecamp.org/)
 
 * [Ruby on Rails Tutorial](https://www.railstutorial.org/book)
 
 * [React](https://facebook.github.io/react/tutorial/tutorial.html)
+
+* [React on Rails](https://github.com/shakacode/react_on_rails)
 
 * [Material-UI](http://www.material-ui.com/#/)
 
