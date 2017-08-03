@@ -2,7 +2,7 @@
 
 Welcome to ServiceDesignKIT!
 
-ServiceDesignKIT was developed by Erwin Leung as a research project in corporation with the research group "Information Systems & Service Design" from the Institute of Information Systems and Marketing (IISM) of Karlsruhe Institute of Technology (KIT).
+ServiceDesignKIT was developed by Erwin Leung as a research project in coorporation with the research group "Information Systems & Service Design" from the Institute of Information Systems and Marketing (IISM) of Karlsruhe Institute of Technology (KIT).
 
 The goal of the project is to help design professionals and design novices in the selection process of design techniques.
 
@@ -12,13 +12,13 @@ If your keen to gain new skills in those mentioned programming-languages, framew
 
 ## Useful Links
 
-*[Freecodecamp](https://www.freecodecamp.org/)
+* [Freecodecamp](https://www.freecodecamp.org/)
 
-*[Ruby on Rails Tutorial](https://www.railstutorial.org/book)
+* [Ruby on Rails Tutorial](https://www.railstutorial.org/book)
 
-*[React](https://facebook.github.io/react/tutorial/tutorial.html)
+* [React](https://facebook.github.io/react/tutorial/tutorial.html)
 
-*[Material-UI](http://www.material-ui.com/#/)
+* [Material-UI](http://www.material-ui.com/#/)
 
 # Lets Get Started!
 
