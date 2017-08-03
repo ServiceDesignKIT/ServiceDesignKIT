@@ -20,18 +20,6 @@ If your keen to gain new skills in those mentioned programming-languages, framew
 
 *[Material-UI](http://www.material-ui.com/#/)
 
-#Install&Configuration
-
-##System dependencies
-
-*PostgreSQL
-*React on Rails
-*Rails 
-*Ruby
-*Material-UI
-
-#Let's get started
-
 # Lets Get Started!
 
 **1. Install Homebrew**
@@ -153,16 +141,17 @@ lunchy start postgres
 
 **5.Install Material-UI**
 
-1.Run
+1. Run
 
  ```bash
   npm install material-ui
   ```
 
-And go to [Material-UI](https://github.com/callemall/material-ui)for further information. 
+And go to [Material-UI] (https://github.com/callemall/material-ui)for further information on how to import the components. 
 
 
-#License
+
+# License
 
 
 ServiceDesignKIT is released unter MIT License | Copyright (c) 2017 Erwin Leung
