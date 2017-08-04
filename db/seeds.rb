@@ -8,12 +8,12 @@
 User.create!(username: "admin",
        email: "admin@sdk.com",
        role: 'admin',
-       password: "admin",
-       password_confirmation: "admin",
+       password: "adminadmin",
+       password_confirmation: "adminadmin",
        confirmed_at: Time.zone.now)
 
 User.create!(username: "testuser",
-			 email: "testuser@skd.com",
+			 email: "testuser@sdk.com",
        role: 'client',
 			 password: "password",
 			 password_confirmation: "password",
