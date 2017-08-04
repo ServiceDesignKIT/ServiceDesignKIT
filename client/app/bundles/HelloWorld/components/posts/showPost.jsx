@@ -9,6 +9,8 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 import AddToFavorite from '../addToFavorite';
 import * as services from '../services';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {blue600, blue700, darkBlack, pinkA200, grey100, grey500, white, grey300, fullBlack, blue50, blue500,indigo500, indigo700, redA200} from 'material-ui/styles/colors';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { ToastContainer, ToastMessage } from "react-toastr";
 import CommentsList from '../comments/CommentsList';
 import CommentForm from '../comments/CommentForm';
@@ -17,6 +19,23 @@ import Footer from '../Footer';
 
 import '../styles/app.scss';
 const ToastMessageFactory = React.createFactory(ToastMessage.animation);
+
+const muiTheme = getMuiTheme({
+    palette: {
+        primary1Color: blue600,
+        primary2Color: blue500,
+        primary3Color: blue700,
+        accent1Color: redA200,
+        pickerHeaderColor: redA200,
+        accent1Color: pinkA200,
+        accent2Color: grey100,
+        accent3Color: grey500,
+        textColor: fullBlack,
+    },
+    inkBar: {
+        backgroundColor: blue500,
+    }
+});
 
 const styles = {
   chip: {
@@ -100,7 +119,7 @@ export default class showPost extends React.Component {
     }
 
     return(
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <Header
             withoutSearch={true}

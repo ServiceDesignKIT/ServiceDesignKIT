@@ -291,7 +291,8 @@ body {
 }
 .post-box {
   padding: 15px 20px;
-  min-height: 500px;
+  min-height: 100%;
+  height: 100vh;
 }
 
 .ReactFlipCard__Back>div>div{
@@ -365,7 +366,7 @@ body {
   }
   >div{
     height: 100% !important;
-    background-color: grey !important;
+    background-color: black !important;
   }
   h1{
     height: 100% !important;
