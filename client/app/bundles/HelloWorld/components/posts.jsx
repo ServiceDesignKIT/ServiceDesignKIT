@@ -13,7 +13,7 @@ export default class Posts extends Component {
 
     if (NaH > NaW && NaH - NaW > 50){
       img.style.width = '70%'
-      img.style.height = '250px'
+      img.style.height = '200px'
       img.style.minWidth = 0
     }else{
       img.style.height = '200px'
