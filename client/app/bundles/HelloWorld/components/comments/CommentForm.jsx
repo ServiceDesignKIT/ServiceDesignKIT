@@ -70,10 +70,10 @@ export default class CommentForm extends React.Component {
               size={60}
             />
           </div>
-          <div style={{float: 'left', width: '85%'}}>
+          <div style={{float: 'left', width: '85%', background: '#EAEDED'}}>
             <TextField
-              hintText="Comment Field"
-              hintStyle={{bottom: 'inherit', top: 13}}
+              hintText="Write a comment..."
+              hintStyle={{bottom: 'inherit', left: 50, top: 13, color: '#909090'}}
               style={{width: '100%'}}
               multiLine={true}
               rows={3}

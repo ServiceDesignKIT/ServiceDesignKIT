@@ -117,9 +117,10 @@ class HeaderRight extends Component {
           }
           <FlatButton key={1} label="Home" href="/" labelColor={white}/>
           <FlatButton key={2} label="About" href="/about" labelColor={white}/>
-          {/*Commented out Impressum in Header */}
+          {/*Impressum Button in Header */}
           {/*<FlatButton key={3} label="Impressum" href="/impressum"/>*/}
-          <FlatButton key={4} label="Contact" href="/contact" labelColor={white}/>
+          {/*Contact Button in Header */}
+          {/*<FlatButton key={4} label="Contact" href="/contact" labelColor={white}/>*/}
           { user ?
             [
               <FlatButton key={5} label="Favorites" href="/favorites" labelColor={white}/>,
@@ -167,14 +168,19 @@ class HeaderLeft extends Component {
 
     return (
       <div id="HeaderLeft">
-        <Avatar
-          src="/missing.png"
-          size={40}
-          style={{borderRadius: 0, top: -8, position: 'relative', marginRight: 15}}
-        />
-        <h1><a href="/" id="title">ServiceDesignKIT</a></h1>
+        <a href="/">
+          <img
+            src="/LOGO.png"
+            style={{top: -8, position: 'relative', marginRight: 15}}
+          />
+        </a>
+        <h1>
+          <a 
+            href="/" id="title">ServiceDesignKIT
+          </a>
+        </h1>
         <IconButton
-          className='menu-batton'
+          className='menu-button'
           iconClassName="material-icons"
           tooltip="Menu"
           onTouchTap={this.props.handleToggle}
@@ -191,7 +197,7 @@ class HeaderLeft extends Component {
         { this.props.autoCompleate &&
           <AutoComplete
             className="auto-compleate"
-            hintText="Find Post..."
+            hintText="Search..."
             filter={AutoComplete.caseInsensitiveFilter}
             openOnFocus={true}
             dataSource={autoCompleateData}

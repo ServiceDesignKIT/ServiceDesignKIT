@@ -6,18 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create!(username: "admin",
-       email: "admin@sdk.com",
+       email: "admin@admin.com",
        role: 'admin',
        password: "adminadmin",
        password_confirmation: "adminadmin",
        confirmed_at: Time.zone.now)
 
-User.create!(username: "testuser",
-                   email: "testuser@sdk.com",
+User.create!(username: "test",
+			 email: "test@gmail.com",
        role: 'client',
-                   password: "password",
-                   password_confirmation: "password",
-                   confirmed_at: Time.zone.now)
+			 password: "password",
+			 password_confirmation: "password",
+			 confirmed_at: Time.zone.now)
 
 
 category1 = Category.create(name: 'Designphase')
@@ -56,7 +56,7 @@ technique1 = Post.new(title: '3-12-3 Brainstorming',
              '<li>Lawley, B., & Schure, P. (2017). Product management for dummies (1st ed.). John Wiley & Sons.</li>'+
              '<li>Gray, D., Brown, S., & Macanufo, J. (2010). Gamestorming (1st ed.). O Reilly.</li>'+
              '<li>http://gamestorming.com/games-for-design/3-12-3-brainstorm/ </li>'+
-             '<li>https://www.slideshare.net/artmassive/ux-methods-training (slide 45)</li>'+
+		 '<li>https://www.slideshare.net/artmassive/ux-methods-training (slide 45)</li>'+
              '</ol>',
              user: User.first,
              subcategory_list: 'Evaluation Type-Group Discussion, User Participation-Without Real User, Duration-Short Term, Time Dependency-Real Time, Design Phase-Planning',
@@ -576,7 +576,7 @@ ii. Recognized outsider: participants know they are being observed by an observe
              '<li>Sanders, E. B.-N. and William, C. T. (2001) ‘Harnessing people’s creativity: Ideation and expression through visual communication’, in Focus Groups: Supporting Effective Product Development. London: Francis and Taylor. </li>'+
              '<li>Martin, B. and Hanington, B. (2012) Universal Methods of Design. Beverly: Rockport Publisher.</li>'+
              '<li>Sanders, E. B. (2000) ‘Generative Tools for Co-Designing’, in Scrivener, Ball, and Woodcock (eds) Collaborative Design. London: Springer-Verlag, pp. 3–12. doi: 10.1007/978-1-4471-0779-8_1.</li>'+
-             '<li>Martin, B., and Hanington, B. 2012. Universal Methods of Design, Beverly: Rockport Publisher.</li>'+
+		 '<li>Martin, B., and Hanington, B. 2012. Universal Methods of Design, Beverly: Rockport Publisher.</li>'+
              '</ol>',
              user: User.first,
              subcategory_list: 'Evaluation Type-Observation, User Participation-User Involved, Duration-Short Term, Time Dependency-Real Time, Design Phase-Planning',
@@ -702,7 +702,7 @@ technique34 = Post.new(title: 'Mind Mapping',
              '<li>Build the diagram (top half of the diagram includes behaviors, beliefs, or emotions; bottom half of the diagram includes available design features, services);</li>'+
              '<li>Group similar behaviors and features;</li>'+
              '<li> Identify the opportunities from the diagram for future design;</li>'+
-             '<li> Use the mental model diagram for further design work. </li>'+
+		 '<li> Use the mental model diagram for further design work. </li>'+
              '</ol>',
              user: User.first,
              subcategory_list: 'Evaluation Type-Group Discussion, User Participation-Without Real User, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Planning',
