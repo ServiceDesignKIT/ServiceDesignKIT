@@ -43,6 +43,7 @@ sub_category15 = category5.sub_categories.create(name: 'Evaluation Type-Group Di
 
 
 technique1 = Post.new(title: '3-12-3 Brainstorming',
+             image: Rails.root.join("public/techniques/3-12-3 Brainstorming.png").open,
              body: '3-12-3 Brainstorming is a time-limited brainstorming technique, which enables a group (not exceed 10 group members) to focus on generating, collecting, and discussing ideas.',
              instruction: '<ol>' + 
              '<li>Define a topic or a problem.</li>'+
@@ -64,6 +65,7 @@ technique1 = Post.new(title: '3-12-3 Brainstorming',
 technique1.save!
 
 technique2 = Post.new(title: '3E- Expressing Emotion and Experience',
+             image: Rails.root.join("public/techniques/3E- Expressing Emotion and Experience.png").open,
              body: '3E technique seeks to collect users’ emotion feedback without too much burden on the user. This technique helps users to express emotions after using a product or a service by writing and drawing on a 3E template.',
              instruction: '<ol>' + 
              '<li>Ask users to use a functional prototype.</li>'+
@@ -82,6 +84,7 @@ technique2 = Post.new(title: '3E- Expressing Emotion and Experience',
 technique2.save!
 
 technique3 = Post.new(title: '6-3-5 Brainwriting',
+             image: Rails.root.join("public/techniques/6-3-5 Brainwriting.png").open,
              body: '6-3-5 Brainwriting seeks to develop 108 ideas by silent writing or sketching in 30 minutes within a group of six participants.',
              instruction: '<ol>' + 
              '<li>Define a topic or a problem.</li>'+
@@ -103,6 +106,7 @@ technique3 = Post.new(title: '6-3-5 Brainwriting',
 technique3.save!
 
 technique4 = Post.new(title: 'A/B Testing',
+             image: Rails.root.join("public/techniques/AB Testing.png").open,
              body: 'A/B testing seeks to compare two versions of a design to see which one can meet the business goal. The technique is useful for comparing a new design with the existing design before it is released to the public.',
              instruction: '<ol>' + 
              '<li>Prepare two versions of a design.</li>'+
@@ -123,6 +127,7 @@ technique4 = Post.new(title: 'A/B Testing',
 technique4.save!
 
 technique5 = Post.new(title: 'Actors Map',
+             image: Rails.root.join("public/techniques/Actors Map.png").open,
              body: 'Actors map visualizes how actors are related to each other and functions/roles of different actors in a service system by building a network of actors.Actors map visualizes how actors are related to each other and functions/roles of different actors in a service system by building a network of actors.',
              instruction: '<ol>' + 
              '<li>Prepare interviews with different actors.</li>'+
@@ -144,6 +149,7 @@ technique5 = Post.new(title: 'Actors Map',
 technique5.save!
 
 technique6 = Post.new(title: 'Affinity Diagramming',
+             image: Rails.root.join("public/techniques/Affinity Diagramming.png").open,
              body: 'Affinity diagramming enables a team to gather, organize, and analyze requirements from interviews or ideas from brainstorming to support the collaborative decision-making process.',
              instruction: '<ol>' + 
              '<li>Write collected data from interviews or brainstorming on sticky notes.</li>'+
@@ -162,6 +168,7 @@ technique6 = Post.new(title: 'Affinity Diagramming',
 technique6.save!
 
 technique7 = Post.new(title: 'Attribute Listing',
+             image: Rails.root.join("public/techniques/Attribute Listing.png").open,
              body: 'Attribute listing seeks to improve a product or a service by decomposing a product or a service into attributes to analyze and improve the quality of each attribute.',
              instruction: '<ol>' + 
              '<li>Identify a service or a product to improve.</li>'+
@@ -180,6 +187,7 @@ technique7 = Post.new(title: 'Attribute Listing',
 technique7.save!
 
 technique8 = Post.new(title: 'Behavioral Mapping',
+             image: Rails.root.join("public/techniques/Behavioral Mapping.png").open,
              body: 'Behavioral Mapping seeks to record and track user behavior within an environment by observing how participants interact with a design space unobtrusively.',
              instruction: '<ol>' + 
              '<li>Prepare a floor plan of the given environment.</li>'+
@@ -198,6 +206,7 @@ technique8 = Post.new(title: 'Behavioral Mapping',
 technique8.save!
 
 technique9 = Post.new(title: 'Bodystorming',
+             image: Rails.root.join("public/techniques/Bodystorming.png").open,
              body: 'Bodystorming combines role-play with paper prototypes. Designers immerse themselves in user situations and use paper prototypes to help designers to collect emotion feedback and improve the prototypes.',
              instruction: '<ol>' + 
              '<li>Prepare some concept ideas as paper prototypes.</li>'+
@@ -216,6 +225,7 @@ technique9 = Post.new(title: 'Bodystorming',
 technique9.save!
 
 technique10 = Post.new(title: 'Business Origami',
+             image: Rails.root.join("public/techniques/Business Origami.png").open,
              body: 'Business origami enables teams to analyze interactions and value exchange among people, environments, and artifacts in early phases of a design process.',
              instruction: '<ol>' + 
              '<li>Define a scenario.</li>'+
@@ -236,6 +246,7 @@ technique10 = Post.new(title: 'Business Origami',
 technique10.save!
 
 technique11 = Post.new(title: 'Closed Card Sorting',
+             image: Rails.root.join("public/techniques/Closed Card Sorting.png").open,
              body: 'Closed card sorting is a useful technique to reflect users’ finding patterns and to structure information to suggest navigations when adding content to an existing structure.',
              instruction: '<ol>' + 
              '<li>Select content and pre-define categories.</li>'+
@@ -256,6 +267,7 @@ technique11 = Post.new(title: 'Closed Card Sorting',
 technique11.save!
 
 technique12 = Post.new(title: 'Co-discovery',
+             image: Rails.root.join("public/techniques/Co-discovery.png").open,
              body: 'Co-discovery seeks to gather experiential data in a relaxed manner by observing how two participants explore the usage of a product together. ',
              instruction: '<ol>' + 
              '<li>Prepare materials, such as functional prototypes and cameras</li>'+
@@ -275,6 +287,7 @@ technique12 = Post.new(title: 'Co-discovery',
 technique12.save!
 
 technique13 = Post.new(title: 'Cognitive Mapping',
+             image: Rails.root.join("public/techniques/Cognitive Mapping.png").open,
              body: 'Cognitive mapping visualizes the cause-effect relationship between related concept to understand how people make sense of a goal. The technique can be used to develop strategies.',
              instruction: '<ol>' + 
              '<li>Write results from interviews in separated sentences (10-12 words long phases that are separated by concept).</li>'+
@@ -294,6 +307,7 @@ technique13 = Post.new(title: 'Cognitive Mapping',
 technique13.save!
 
 technique14 = Post.new(title: 'Cognitive Walkthrough',
+             image: Rails.root.join("public/techniques/Cognitive Walkthrough.png").open,
              body: 'Cognitive walkthrough enables design teams to evaluate prototypes from a potential user’s perspective. A fully functional prototype and users are not necessary. ',
              instruction: '<ol>' + 
              '<li>Describe a fictive user as a targeted user.</li>'+
@@ -314,6 +328,7 @@ technique14 = Post.new(title: 'Cognitive Walkthrough',
 technique14.save!
 
 technique15 = Post.new(title: 'Collaborative Sketching',
+             image: Rails.root.join("public/techniques/Collaborative Sketching.png").open,
              body: 'Collaborative sketching technique seeks to generate, evaluate, and refine user interface design. It enhances the collaborative process between designers and clients, and dramatically reduced the time required to achieve the desired results. ',
              instruction: '<ol>' + 
              '<li>Set up a big blank canvas to stick inputs (information that guide sketching) and sketches.</li>'+
@@ -336,6 +351,7 @@ technique15 = Post.new(title: 'Collaborative Sketching',
 technique15.save!
 
 technique16 = Post.new(title: 'Concept Mapping',
+             image: Rails.root.join("public/techniques/Concept Mapping.png").open,
              body: 'A concept map is used to organize concepts, which are connected by arrows and link words to visualize a complex system or to explain a new concept. Concepts in a concept map are presented in a downward hierarchy. General concepts are at the top of the map, and specific concepts are at the bottom.',
              instruction: '<ol>' + 
              '<li>Involve stakeholders in the early phase of a design process and prepare pieces of paper and pens (or online tool).</li>'+
@@ -354,6 +370,7 @@ technique16 = Post.new(title: 'Concept Mapping',
 technique16.save!
 
 technique17= Post.new(title: 'Content Inventory & Auditing',
+             image: Rails.root.join("public/techniques/Content Inventory & Auditing.png").open,
              body: 'A content inventory is a list of content on a website (text, images, etc.). Based on the existing content, a content audit can be made to recommend further improvement of the website. ',
              instruction: '<ol>' + 
              '<li>Involve stakeholders in the early phase of a design process and prepare pieces of paper and pens (or online tool).</li>'+
@@ -372,6 +389,7 @@ technique17= Post.new(title: 'Content Inventory & Auditing',
 technique17.save!
 
 technique18 = Post.new(title: 'Contextual Laddering',
+             image: Rails.root.join("public/techniques/Contextual Laddering.png").open,
              body: 'Contextual Laddering',
              instruction: '<ol>' + 
              '<li>Plan a contextual laddering interview early in the design process before fixated features are decided.</li>'+
@@ -383,8 +401,7 @@ technique18 = Post.new(title: 'Contextual Laddering',
              '<li>https://www.usability.gov/how-to-and-tools/methods/content-inventory.html</li>'+
              '<li>http://www.content-insight.com/resources/content-inventory-and-audit-articles/template-content-inventory-and-audit/</li>'+
              '<li>https://moz.com/blog/content-audit#4</li>'+
-              '<li> http://uxmastery.com/how-to-conduct-a-content-audit/
-</li>'+
+             '<li> http://uxmastery.com/how-to-conduct-a-content-audit/</li>'+
              '</ol>',
              user: User.first,
              subcategory_list: 'Evaluation Type-Interview, User Participation-User Involved, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Planning',
@@ -392,6 +409,7 @@ technique18 = Post.new(title: 'Contextual Laddering',
 technique18.save!
 
 technique19= Post.new(title: 'Critical Incident Technique',
+             image: Rails.root.join("public/techniques/Critical Incident Technique.png").open,
              body: 'Critical incident technique seeks to gain an understanding of the existing incident from the perspective of the individual and learn how users behave during the incident to generate recommendations for improving further designs. ',
              instruction: '<ol>' + 
              '<li>Gain access to participants.</li>'+
@@ -410,6 +428,7 @@ technique19= Post.new(title: 'Critical Incident Technique',
 technique19.save!
 
 technique20 = Post.new(title: 'Concurrent Think-aloud',
+             image: Rails.root.join("public/techniques/Concurrent Think-aloud.png").open,
              body: 'Concurrent Think-aloud is used to reveal how participants are thinking when they are performing a task. By asking the participants to verbalize their doing and thinking, designers will get insights on how users evaluate detail functions of an interface design.',
              instruction: '<ol>' + 
              '<li>Recruit participant and organize a think-aloud session.</li>'+
@@ -429,6 +448,7 @@ technique20 = Post.new(title: 'Concurrent Think-aloud',
 technique20.save!
 
 technique21 = Post.new(title: 'Desirability Testing with Product Research Cards',
+             image: Rails.root.join("public/techniques/Desirability Testing with Product Research Cards.png").open,
              body: 'Desirability testing with product reaction cards seeks to help designers to understand the nebulous, critical feeling of desirability in user experience. It can be used to compare the iterative designs.Desirability testing with product reaction cards seeks to help designers to understand the nebulous, critical feeling of desirability in user experience. It can be used to compare the iterative designs.',
              instruction: '<ol>' + 
              '<li>Decide which product reaction cards (60% positive, 40% negative) to use to test desirability.</li>'+
@@ -448,6 +468,7 @@ technique21 = Post.new(title: 'Desirability Testing with Product Research Cards'
 technique21.save!
 
 technique22 = Post.new(title: 'Diary Studies',
+             image: Rails.root.join("public/techniques/Diary Studies.png").open,
              body: 'Diary studies enable designers to capture users’ thoughts, feelings, and behaviors throughout a few days or weeks to understand the users’ long-term habits. ',
              instruction: '<ol>' + 
              '<li>Determine the purpose and a timeline of the diary study. </li>'+
@@ -467,6 +488,7 @@ technique22 = Post.new(title: 'Diary Studies',
 technique22.save!
 
 technique23 = Post.new(title: 'Directed Storytelling',
+             image: Rails.root.join("public/techniques/Directed Storytelling.png").open,
              body: 'Directed storytelling enables designers to easily gather rich data of users’ experiences to understand users. The technique is useful when time and budget are at a premium.',
              instruction: '<ol>' + 
              '<li>Prepare guiding questions for the storyteller to tell a story.</li>'+
@@ -485,6 +507,7 @@ technique23 = Post.new(title: 'Directed Storytelling',
 technique23.save!
 
 technique24 = Post.new(title: 'Experience Clip',
+             image: Rails.root.join("public/techniques/Experience Clip.png").open,
              body: 'Experience clip technique seeks to collect user experience of the usage of location-based outdoor mobile Apps without disturbance from user researchers. The technique is conducted by two users. One user uses a mobile App; another user takes video clips.',
              instruction: '<ol>' + 
              '<li>Prepare devices and materials and recruit participants.</li>'+
@@ -503,6 +526,7 @@ technique24 = Post.new(title: 'Experience Clip',
 technique24.save!
 
 technique25 = Post.new(title: 'Experience Prototyping',
+             image: Rails.root.join("public/techniques/Experience Prototyping.png").open,
              body: 'Experience prototyping is conducted when specific artifacts or elements are available (no need to be a functional prototype, but specific elements and situation are needed). The technique enhances the understanding of what it would be like when a user uses the design.',
              instruction: '<ol>' + 
              '<li>Finalize a low-fidelity prototype (specific elements need to be included.</li>'+
@@ -522,6 +546,7 @@ technique25 = Post.new(title: 'Experience Prototyping',
 technique25.save!
 
 technique26 = Post.new(title: 'Eye-tracking',
+             image: Rails.root.join("public/techniques/Eye-tracking.png").open,
              body: 'The eye-tracking technique reveals users’ attention to a web page by measuring where eyes are looking, how long they are looking, and how their focus are moving.',
              instruction: '<ol>' + 
              '<li>Prepare eye-tracking devices and materials.</li>'+
@@ -540,6 +565,7 @@ technique26 = Post.new(title: 'Eye-tracking',
 technique26.save!
 
 technique27 = Post.new(title: 'Flexible Modeling',
+             image: Rails.root.join("public/techniques/Flexible Modeling.png").open,
              body: 'The flexible modeling technique helps designers to create a prototype with users by applying a predefined set of elements of an interface. ',
              instruction: '<ol>' + 
              '<li>Prepare a set of predetermined feature elements.</li>'+
@@ -560,6 +586,7 @@ technique27 = Post.new(title: 'Flexible Modeling',
 technique27.save!
 
 technique28 = Post.new(title: '"Fly-on-the-Wall" Observation',
+             image: Rails.root.join("public/techniques/Fly-on-the-Wall Observation.png").open,
              body: 'The "Fly on the Wall" (FOTW) technique is an unobtrusive observation technique where the observer observes user behaviors without interfering the representation.',
             instruction: '<ol>' + 
              '<li>Decide which form of observation to use.</li>'+
@@ -584,6 +611,7 @@ ii. Recognized outsider: participants know they are being observed by an observe
 technique28.save!
 
 technique29 = Post.new(title: 'Graffiti Walls',
+             image: Rails.root.join("public/techniques/Graffiti Walls.png").open,
              body: 'Graffiti walls enable participants to provide their comments freely by writing or drawing on an open canvas. This technique is very useful to reflect user behaviors in the situation that privacy and ethical issues need to be considered.',
              instruction: '<ol>' + 
              '<li>Define a theme and decide an environmental space to adhere a large-format paper as a graffiti wall.</li>'+
@@ -603,6 +631,7 @@ technique29 = Post.new(title: 'Graffiti Walls',
 technique29.save!
 
 technique30 = Post.new(title: 'Heuristic Evaluation',
+             image: Rails.root.join("public/techniques/Heuristic Evaluation.png").open,
              body: 'Heuristic evaluation enables designers to go through their website’s interface and get feedback and detect usability problems early in the design process.  ',
              instruction: '<ol>' + 
              '<li>Determine an appropriate list of heuristics.</li>'+
@@ -625,6 +654,7 @@ technique30 = Post.new(title: 'Heuristic Evaluation',
 technique30.save!
 
 technique31 = Post.new(title: 'Kano Analysis',
+             image: Rails.root.join("public/techniques/Kano Analysis.png").open,
              body: 'Kano analysis not only enables designers to assign design features to five product attributes (required, desired, delighter, neutral, anti-feature), but also to determine which attributes have the greatest impact on customer satisfaction.',
              instruction: '<ol>' + 
              '<li>Choose target features and users.</li>'+
@@ -646,6 +676,7 @@ technique31 = Post.new(title: 'Kano Analysis',
 technique31.save!
 
 technique32 = Post.new(title: 'LEGO Serious Play',
+             image: Rails.root.join("public/techniques/LEGO Serious Play.png").open,
              body: 'LEGO Serious Play is an innovative process that enhances the generation of ideas and innovative solutions within a group by using LEGO.',
              instruction: '<ol>' + 
              '<li>Identify a question for LEGO serious play.</li>'+
@@ -669,6 +700,7 @@ technique32 = Post.new(title: 'LEGO Serious Play',
 technique32.save!
 
 technique33 = Post.new(title: 'Mental Model Diagrams',
+             image: Rails.root.join("public/techniques/Mental Model Diagrams.png").open,
              body: 'Mental mood diagrams are applied to analyze whether existing design features align with users’ behaviors, emotions, and beliefs and helps designers to make development strategies.',
              instruction: '<ol>' + 
              '<li>Review results from interviews, diary studies, etc..</li>'+
@@ -689,6 +721,7 @@ technique33 = Post.new(title: 'Mental Model Diagrams',
 technique33.save!
 
 technique34 = Post.new(title: 'Mind Mapping',
+             image: Rails.root.join("public/techniques/Mind Mapping.png").open,
              body: 'Mind mapping seeks to visualize the relationships among many pieces of related information on a problem or a topic, which helps to generate ideas and concepts.',
              instruction: '<ol>' + 
              '<li>Write a topic in the center (use a piece of paper or online tool). </li>'+
@@ -710,6 +743,7 @@ technique34 = Post.new(title: 'Mind Mapping',
 technique34.save!
 
 technique35 = Post.new(title: 'Mood Boards',
+             image: Rails.root.join("public/techniques/Mood Boards.png").open,
              body: 'A mood board is a collage of collected pictures that helps the visualization of some information that is difficult to describe by words. This technique helps a design team to reach a consensus goal concept early in the design process.  ',
              instruction: '<ol>' + 
              '<li>Prepare materials like card or paper sheets, a preset collection of images, words, shapes, and glue sticks.</li>'+
@@ -728,6 +762,7 @@ technique35 = Post.new(title: 'Mood Boards',
 technique35.save!
 
 technique36 = Post.new(title: 'Motivation Matrix',
+             image: Rails.root.join("public/techniques/Motivation Matrix.png").open,
              body: 'Motivation matrix technique seeks to identify and visualize the connection between actors as well as the motivation of each actor, which helps to understand the connection between each stakeholder. ',
              instruction: '<ol>' + 
              '<li>Give a group a blank matrix: pre-defined stakeholders at the top and the left-hand side. </li>'+
@@ -746,6 +781,7 @@ technique36 = Post.new(title: 'Motivation Matrix',
 technique36.save!
 
 technique37 = Post.new(title: 'Offering Map',
+             image: Rails.root.join("public/techniques/Offering Map.png").open,
              body: 'An offering map seeks to systematically describe how a service is offered to its users, which helps to detail a design idea or generate solution ideas for a service design.',
              instruction: '<ol>' + 
              '<li>Define a purpose for making an offering map.</li>'+
@@ -766,6 +802,7 @@ technique37 = Post.new(title: 'Offering Map',
 technique37.save!
 
 technique38 = Post.new(title: 'Open Card Sorting',
+             image: Rails.root.join("public/techniques/Open Card Sorting.png").open,
              body: 'Open card sorting means there are no pre-defined categories. Rather, participants create their names for the categories they create. The technique is useful for sorting user research findings and structuring content.',
              instruction: '<ol>' + 
              '<li>Prepare the cards and recruit participants.</li>'+
@@ -784,6 +821,7 @@ technique38 = Post.new(title: 'Open Card Sorting',
 technique38.save!
 
 technique39 = Post.new(title: 'Parallel Prototyping',
+             image: Rails.root.join("public/techniques/Parallel Prototyping.png").open,
              body: 'Parallel prototyping means simultaneously creating multiple designs, which helps design teams keep from fixating on a design direction too early and lead to more effective design results.',
              instruction: '<ol>' + 
              '<li>Start prototyping with multiple alternative designs (>=3) at the same time.</li>'+
@@ -801,6 +839,7 @@ technique39 = Post.new(title: 'Parallel Prototyping',
 technique39.save!
 
 technique40 = Post.new(title: 'Personas',
+             image: Rails.root.join("public/techniques/Personas.png").open,
              body: 'Personas are profiles that describe user behavior patterns to collect experiences, which humanize the design focus, test scenarios, and aid design communications.',
              instruction: '<ol>' + 
              '<li>Collect information of targeted users. </li>'+
@@ -820,6 +859,7 @@ technique40 = Post.new(title: 'Personas',
 technique40.save!
 
 technique41 = Post.new(title: 'Photo Diary',
+             image: Rails.root.join("public/techniques/Photo Diary.png").open,
              body: 'Photo diary seeks to help designers to understand users’ surroundings by inviting users to take photos of their lives and interactions. ',
              instruction: '<ol>' + 
              '<li>Identify the purpose of a photo diary. </li>'+
@@ -841,6 +881,7 @@ technique41 = Post.new(title: 'Photo Diary',
 technique41.save!
 
 technique42 = Post.new(title: 'Photo Elicitation Interview',
+             image: Rails.root.join("public/techniques/Photo Elicitation Interview.png").open,
              body: 'Photo elicitation interview technique seeks to help to understand user communities, their experiences, and desires by using photos that relate to the context of everyday activities to recall people’s experience.',
              instruction: '<ol>' + 
              '<li>Identify the purpose and recruit participants.</li>'+
@@ -857,6 +898,7 @@ technique42 = Post.new(title: 'Photo Elicitation Interview',
 technique42.save!
 
 technique43 = Post.new(title: 'Private Camera Conversation',
+             image: Rails.root.join("public/techniques/Private Camera Conversation.png").open,
              body: 'Private camera conversation seeks to avoid the bias from interviewers by asking participants to talk to a camera about a given topic after using a prototype or a product without influence from interviewers.',
              instruction: '<ol>' + 
              '<li>Decide a topic and recruit participants.</li>'+
@@ -875,6 +917,7 @@ technique43 = Post.new(title: 'Private Camera Conversation',
 technique43.save!
 
 technique44 = Post.new(title: 'Product Experience Tracker',
+             image: Rails.root.join("public/techniques/Product Experience Tracker.png").open,
              body: 'Product experience tracker means surveys are sent "immediately" (e.g. minutes, hours, or even a few days) after product use. Questionnaires are regularly sent (monthly). Results from the regularly sent surveys report the changes of the user satisfaction over time.',
              instruction: '<ol>' + 
              '<li>Prepare questionnaire.</li>'+
@@ -893,6 +936,7 @@ technique44 = Post.new(title: 'Product Experience Tracker',
 technique44.save!
 
 technique45 = Post.new(title: 'Repertory Grid Technique',
+             image: Rails.root.join("public/techniques/Repertory Grid Technique.png").open,
              body: 'Repertory grid technique seeks to identify the ways people interpret their experiences by interviewing people to elucidate their personal constructs (friendly–hostile, bad–good, etc.) when they are confronted with artifacts (i.e., prototypes in the design process).',
              instruction: '<ol>' + 
              '<li>Prepare prototypes (6-12) and recruit participants.</li>'+
@@ -912,6 +956,7 @@ technique45 = Post.new(title: 'Repertory Grid Technique',
 technique45.save!
 
 technique46 = Post.new(title: 'Retrospective Think-aloud',
+             image: Rails.root.join("public/techniques/Retrospective Think-aloud.png").open,
              body: 'Retrospective think-aloud gathers participants’ feedback after a task has been accomplished. Participants are asked to recall their thoughts when they are using the interface. ',
              instruction: '<ol>' + 
              '<li>Identify a task and recruit participants.</li>'+
@@ -932,6 +977,7 @@ technique46 = Post.new(title: 'Retrospective Think-aloud',
 technique46.save!
 
 technique47 = Post.new(title: 'Roadmapping',
+             image: Rails.root.join("public/techniques/Roadmapping.png").open,
              body: 'A design roadmap is a canvas that allows design teams to strategically visualize and map out user experience and design elements over time.',
              instruction: '<ol>' + 
              '<li>Analyze results from interview, observation, or questionnaire.</li>'+
@@ -951,6 +997,7 @@ technique47 = Post.new(title: 'Roadmapping',
 technique47.save!
 
 technique48 = Post.new(title: 'Role-playing',
+             image: Rails.root.join("public/techniques/Role-playing.png").open,
              body: 'Role-playing seeks to get a deep understanding of users’ habit and design challenges and opportunities by simulating the users’ role in a scenario.',
              instruction: '<ol>' + 
              '<li>Decide a scenario and a task to accomplish.</li>'+
@@ -971,6 +1018,7 @@ technique48 = Post.new(title: 'Role-playing',
 technique48.save!
 
 technique49 = Post.new(title: 'Scenarios',
+             image: Rails.root.join("public/techniques/Scenarios.png").open,
              body: 'A scenario is to use narratives to explain the future use of a service from a user’s point of view, which seeks to help design teams to understand service environment of people’s daily life.',
              instruction: '<ol>' + 
              '<li>Have a basic understanding of the tasks.</li>'+
@@ -988,6 +1036,7 @@ technique49 = Post.new(title: 'Scenarios',
 technique49.save!
 
 technique50 = Post.new(title: 'Sentence Completion',
+             image: Rails.root.join("public/techniques/Sentence Completion.png").open,
              body: 'Sentence completion is a technique for creating a questionnaire that includes a set of beginnings of sentences, which enables users to think about their experience after using a service.',
              instruction: '<ol>' + 
              '<li>Identify the purpose.</li>'+
@@ -1008,6 +1057,7 @@ technique50 = Post.new(title: 'Sentence Completion',
 technique50.save!
 
 technique51 = Post.new(title: 'Service Blueprint',
+             image: Rails.root.join("public/techniques/Service Blueprint.png").open,
              body: 'Service blueprinting seeks to visualize key activities and connections between the activities in service processes from customers’ perspective, which helps to generate service innovations, improve service qualities and customer experience.',
              instruction: '<ol>' + 
              '<li>Invite people to create a service blueprint (people from cross-functional teams and customers are suggested to be involved if possible).</li>'+
@@ -1029,6 +1079,7 @@ technique51 = Post.new(title: 'Service Blueprint',
 technique51.save!
 
 technique52 = Post.new(title: 'Shadowing',
+             image: Rails.root.join("public/techniques/Shadowing.png").open,
              body: 'The shadowing technique enables designers to understand existing user behaviors by observing users in a natural environment.',
              instruction: '<ol>' + 
              '<li>Locate a venue and the appropriate person(s) within that venue to observe. </li>'+
@@ -1050,6 +1101,7 @@ technique52 = Post.new(title: 'Shadowing',
 technique52.save!
 
 technique53 = Post.new(title: 'Speed Dating',
+             image: Rails.root.join("public/techniques/Speed Dating.png").open,
              body: 'Speed dating seeks to support low-cost, rapid comparison of design opportunities before expensive prototypes are built.',
              instruction: '<ol>' + 
              '<li>Need validation
@@ -1071,6 +1123,7 @@ ii. Build a fictional environment and ask participants to walk through simulated
 technique53.save!
 
 technique54 = Post.new(title: 'Stakeholder Maps',
+             image: Rails.root.join("public/techniques/Stakeholder Maps.png").open,
              body: 'Stakeholder maps enable a team to visualize the consolidate and communication between key constituents of a design project at the beginning of the design process.',
              instruction: '<ol>' + 
              '<li>Invite people who will benefit from the project.</li>'+
@@ -1089,6 +1142,7 @@ technique54 = Post.new(title: 'Stakeholder Maps',
 technique54.save!
 
 technique55 = Post.new(title: 'Stakeholder Walkthrough',
+             image: Rails.root.join("public/techniques/Stakeholder Walkthrough.png").open,
              body: 'Stakeholder walkthrough enables end users, stakeholders, and the design team together to evaluate early prototypes, which provides an opportunity for users and stakeholders to provide actionable recommendations for improvements and building empathy.',
              instruction: '<ol>' + 
              '<li>Define the walkthrough’s scope and objectives. </li>'+
@@ -1106,6 +1160,7 @@ technique55 = Post.new(title: 'Stakeholder Walkthrough',
 technique55.save!
 
 technique56 = Post.new(title: 'Storyboards',
+             image: Rails.root.join("public/techniques/Storyboards.png").open,
              body: 'A storyboard is a visual representation of the interaction between users and products or services, which includes a sequence of images that describe environments, users, and products. This technique helps to generate design alternatives in the early phase of a design process.',
              instruction: '<ol>' + 
              '<li>Brainstorm about design alternatives and sketch storyboards individually (need to consider the environment, visual cues, audible cues, tactile cues, user input, interface output, user emotion, technology, quality of experience).</li>'+
@@ -1125,6 +1180,7 @@ technique56 = Post.new(title: 'Storyboards',
 technique56.save!
 
 technique57 = Post.new(title: 'Story Sharing',
+             image: Rails.root.join("public/techniques/Story Sharing.png").open,
              body: 'Story sharing enables a design team to seek out same contents within different use contexts to generate opportunities and solutions.',
              instruction: 'From IDEOS HCD Toolkit' +
              '<ol>' + 
@@ -1145,6 +1201,7 @@ technique57 = Post.new(title: 'Story Sharing',
 technique57.save!
 
 technique58 = Post.new(title: 'Territory Maps',
+             image: Rails.root.join("public/techniques/Territory Maps.png").open,
              body: 'Territory maps seek to present a shared version of the contribution of each team member in a design team. Creating territory maps at the early stage of the design process cannot only visualize the collaboration between team members, but also fosters and maintains the focus of design activities.',
              instruction: '<ol>' + 
              '<li>Tell each member to consider their contributions on their own (consider the trends, ideas, and stakeholders they deem important to the topic to provide context for their choices).</li>'+
@@ -1163,6 +1220,7 @@ technique58 = Post.new(title: 'Territory Maps',
 technique58.save!
 
 technique59 = Post.new(title: 'The Love Letter & Breakup Letter',
+             image: Rails.root.join("public/techniques/The Love Letter & Breakup Letter.png").open,
              body: 'The love letter and the breakup letter enable people to express their sentiments about a product or a service, which gain insights into values and expectations in daily life.',
              instruction: '<ol>' + 
              '<li>Decide how many letters you would like to have and what the character is of the insights you are gathering.</li>'+
@@ -1182,6 +1240,7 @@ technique59 = Post.new(title: 'The Love Letter & Breakup Letter',
 technique59.save!
 
 technique60 = Post.new(title: 'Tomorrow Headlines',
+             image: Rails.root.join("public/techniques/Tomorrow Headlines.png").open,
              body: 'Tomorrow’s headlines are fictional articles that seek to illustrate how a new service idea or concept will influence people’s daily life or the society in the future. ',
              instruction: '<ol>' + 
              '<li>Gather a group of people.</li>'+
@@ -1201,6 +1260,7 @@ technique60 = Post.new(title: 'Tomorrow Headlines',
 technique60.save!
 
 technique61 = Post.new(title: 'Touchpoints Matrix',
+             image: Rails.root.join("public/techniques/Touchpoints Matrix.png").open,
              body: 'A touchpoint matrix visualizes how users interact with different touchpoints in the product-service system. The techniques can be used to analyze existing service system as well as support a concept design phase.',
              instruction: '<ol>' + 
              '<li>Define components (listing the different touchpoints in the vertical axis and system supported main actions in the horizontal axis).</li>'+
@@ -1221,6 +1281,7 @@ technique61 = Post.new(title: 'Touchpoints Matrix',
 technique61.save!
 
 technique62 = Post.new(title: 'User Journey Maps',
+             image: Rails.root.join("public/techniques/User Journey Maps.png").open,
              body: 'A user journey map visualizes the process that people would interact with a service from the perspective of users, which enable designers to see the magic moments and pain points. A shared version of a user journey map helps a design team to optimize a service process before comes to a released version. ',
              instruction: '<ol>' + 
              '<li>The create of user journey map starts with the first time users aware of the service.</li>'+
@@ -1240,6 +1301,7 @@ technique62 = Post.new(title: 'User Journey Maps',
 technique62.save!
 
 technique63 = Post.new(title: 'UX Curve',
+             image: Rails.root.join("public/techniques/UX Curve.png").open,
              body: 'UX curve supports users to recall details of interactive experience with a product or a service, which reveals how relationships between users and products or services evolve over time. ',
              instruction: '<ol>' + 
              '<li>Recruit participants for a long-term study (3-12 months).</li>'+
@@ -1258,6 +1320,7 @@ technique63 = Post.new(title: 'UX Curve',
 technique63.save!
 
 technique64 = Post.new(title: 'Value Mapping',
+             image: Rails.root.join("public/techniques/Value Mapping.png").open,
              body: 'c',
              instruction: '<ol>' + 
              '<li>Individually write down most valuable works for oneself and the organization on cards.</li>'+
@@ -1277,6 +1340,7 @@ technique64 = Post.new(title: 'Value Mapping',
 technique64.save!
 
 technique65 = Post.new(title: 'Value Opportunity Analysis',
+             image: Rails.root.join("public/techniques/Value Opportunity Analysis.png").open,
              body: 'c',
              instruction: '<ol>' + 
              '<li>Decide what to analyze. </li>'+
@@ -1300,6 +1364,7 @@ Quality: craftsmanship, durability</li>'+
 technique65.save!
 
 technique66 = Post.new(title: 'Web Analytics',
+             image: Rails.root.join("public/techniques/Web Analytics.png").open,
              body: 'Web analytics enables an organization to understand how and what users are doing online by collecting, analyzing, and reporting Internet data.',
              instruction: '<ol>' + 
              '<li>Articulate goals of what information is needed.</li>'+
@@ -1318,6 +1383,7 @@ technique66 = Post.new(title: 'Web Analytics',
 technique66.save!
 
 technique67 = Post.new(title: 'Web of Abstraction',
+             image: Rails.root.join("public/techniques/Web of Abstraction.png").open,
              body: 'Web of Abstraction seeks to examine the challenges associated with a vision or desired outcome, which helps to generate ideas and solutions and support decision-making process. Ideas and solutions can be generated by continuously asking two questions, “Why” and “What is stopping me/us?”',
              instruction: '<ol>' + 
              '<li>Identify the original challenge and write the challenge in the center of a piece of paper. </li>'+
@@ -1336,6 +1402,7 @@ technique67 = Post.new(title: 'Web of Abstraction',
 technique67.save!
 
 technique68 = Post.new(title: 'Weighted Matrix',
+             image: Rails.root.join("public/techniques/Weighted Matrix.png").open,
              body: 'A weighted matrix enables the comparison of importance level of multiple criteria in order to make a shared decision on alternatives in a multidisciplinary team. ',
              instruction: '<ol>' + 
              '<li>Gather team members and brainstorm the evaluation criteria.</li>'+
@@ -1357,6 +1424,7 @@ technique68 = Post.new(title: 'Weighted Matrix',
 technique68.save!
 
 technique69 = Post.new(title: 'Wireframe',
+             image: Rails.root.join("public/techniques/Wireframe.png").open,
              body: 'Wireframes depict simplified outlines of all the different elements on a user interface, which serve as low-fidelity prototypes that allow designers to have a clear understanding of the architecture and functions of an interface. ',
              instruction: '<ol>' + 
              '<li>Prepare content for a wireframe. </li>'+
@@ -1379,6 +1447,7 @@ technique69 = Post.new(title: 'Wireframe',
 technique69.save!
 
 technique70 = Post.new(title: 'Wizard of Oz',
+             image: Rails.root.join("public/techniques/Wizard of Oz.png").open,
              body: 'Wizard of Oz technique enables users to interact with a low-cost and non-functional prototype by having a “wizard” behind-the-scenes to operate the interaction, which tests users’ willingness to new things before building costly prototypes. ',
              instruction: '<ol>' + 
              '<li>Create a low-cost and non-functional prototype for the simulation.</li>'+

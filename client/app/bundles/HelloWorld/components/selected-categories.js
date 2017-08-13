@@ -17,7 +17,7 @@ export default class SelectedCategories extends Component {
             />
           </Chip>
         ))
-        : 'No filter selected, showing all posts'}
+        : 'No filter selected, showing all techniques'}
       </div>
     );
   }
