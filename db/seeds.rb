@@ -758,7 +758,7 @@ technique35 = Post.new(title: 'Mood Boards',
              '</ol>',
              user: User.first,
              subcategory_list: 'Evaluation Type-Group Discussion, User Participation-Without Real User, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Planning',
-             freetag_list: 'User Habit InvestigationUser Participation, Short Term')
+             freetag_list: 'User Habit Investigation, User Participation, Short Term')
 technique35.save!
 
 technique36 = Post.new(title: 'Motivation Matrix',
