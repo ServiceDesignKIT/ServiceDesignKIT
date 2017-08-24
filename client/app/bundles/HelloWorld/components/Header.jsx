@@ -170,7 +170,7 @@ class HeaderLeft extends Component {
       <div id="HeaderLeft">
         <a href="/">
           <img
-            src="/LOGO.png"
+            src="/white-logo.png"
             style={{top: -8, position: 'relative', marginRight: 15}}
           />
         </a>
