@@ -43,41 +43,84 @@ export default class App extends React.Component {
     this.refs.container.success("Welcome!");
   }
 
-  handleToggleSubCategory(subCategory) {
-    this.setState({
-      selectedSubCategories: this.toggleItemInArr(this.state.selectedSubCategories, subCategory)
-    }, this.filterPosts);
+   handleToggleSubCategory(subCategory) {
+    let params = {
+      selectedSubCategories: this.toggleItemInArr(this.state.selectedSubCategories, subCategory, 'subC'),
+      selectedTags: this.state.selectedTags,
+      search: this.state.search,
+    }
+    this.setState(params);
+    this.filterPosts(params);
   }
 
   handleToggleTag(tag) {
-    this.setState({
-      selectedTags: this.toggleItemInArr(this.state.selectedTags, tag)
-    }, this.filterPosts);
+    let params = {
+      selectedSubCategories: this.state.selectedSubCategories,
+      selectedTags: this.toggleItemInArr(this.state.selectedTags, tag),
+      search: this.state.search,
+    }
+    this.setState(params);
+    this.filterPosts(params);
   }
 
-  toggleItemInArr(arr, item) {
-    const index = arr.indexOf(item);
+  toggleItemInArr(arr, item, type) {
+    let array = arr;
+    const index = array.indexOf(item);
+    const index2 = array.indexOf(array.find(el => el.includes(item.split('-')[0])));
+
+    if (type == 'subC' && index2 !== -1) {
+      array = [
+        ...array.slice(0, index2),
+        ...array.slice(index2 + 1)
+      ]
+
+      if (index2 === index){
+        return array
+      }
+    }
 
     if (index === -1) {
-      return arr.concat(item)
+      return array.concat(item)
     } else {
       return [
-        ...arr.slice(0, index),
-        ...arr.slice(index + 1)
+        ...array.slice(0, index),
+        ...array.slice(index + 1)
       ];
     }
   }
 
   handleSetSearch(evt, search) {
-    this.setState({ search }, this.filterPosts);
+    let params = {
+      selectedSubCategories: this.state.selectedSubCategories,
+      selectedTags: this.state.selectedTags,
+      search: search,
+    }
+    this.setState(params);
+    this.filterPosts(params);
   }
 
-  filterPosts() {
+  filterPosts(options={}) {
     const filteredPosts = this.state.data.filter(post => {
-      return post.title.toLowerCase().includes(this.state.search.toLowerCase()) &&
-        (this.state.selectedTags.length ? this.isArraysIntersect(post.freetag_list, this.state.selectedTags) : true) &&
-        (this.state.selectedSubCategories.length ? this.isArraysIntersect(post.subcategory_list, this.state.selectedSubCategories) : true);
+
+      let equalTitle = true;
+      let tagsLength = true;
+      let categoriesLength = true;
+
+      if (options.search){
+        equalTitle = post.title.toLowerCase().includes(options.search.toLowerCase());
+      }
+
+      if (options.selectedTags && options.selectedTags.length){
+        tagsLength = this.isArraysIntersect(post.freetag_list, options.selectedTags)
+      }
+
+      if (options.selectedSubCategories && options.selectedSubCategories.length){
+        categoriesLength = this.isSubCatArraysIntersect(post.subcategory_list, options.selectedSubCategories)
+      }
+
+      return equalTitle && tagsLength && categoriesLength
     });
+
     this.setState({ filteredPosts, is_load: true }, this.scroll);
   }
 
@@ -95,6 +138,16 @@ export default class App extends React.Component {
       if (arr2.includes(item)) intersect = true;
     });
     return intersect;
+  }
+
+  isSubCatArraysIntersect(arr1, arr2) {
+    return !arr2.map(e => e.split('-')[0].trim() )
+                .filter((v, i, a) => a.indexOf(v) === i)
+                .map(n =>  {
+      let arrs = arr2.filter(k => k.includes(n));
+
+      return this.isArraysIntersect(arr1, arrs);
+    }).includes(false)
   }
 
   render() {
@@ -116,6 +169,7 @@ export default class App extends React.Component {
             selected={this.state.selectedSubCategories}
             onToggleSubCategory={this.handleToggleSubCategory.bind(this)}
           />
+           <div className="counter">{this.state.filteredPosts.length} Result(s)</div>
           <div id="container" className="group">
             <div id="left">
               <CategoriesFilter

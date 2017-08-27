@@ -13,6 +13,14 @@ body {
   background-color: gray!important;
 }
 
+.counter {    
+  margin-left: 35px;    
+  top: 10px;    
+  position: relative;   
+  color: gray;    
+  font-size: 15px;    
+}   
+
 .tabs > div:nth-child(2) {
   width: 50%!important;
 }

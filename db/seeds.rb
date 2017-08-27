@@ -35,7 +35,7 @@ sub_category7 = category2.sub_categories.create(name: 'Time Dependency-Real Time
 sub_category8 = category2.sub_categories.create(name: 'Time Dependency-Retrospective')
 sub_category9 = category4.sub_categories.create(name: 'User Participation-User Involved')
 sub_category10 = category4.sub_categories.create(name: 'User Participation-Without Real User')
-sub_category11 = category5.sub_categories.create(name: 'Evaluation Type-Test Questionnaire')
+sub_category11 = category5.sub_categories.create(name: 'Evaluation Type-Questionnaire')
 sub_category12 = category5.sub_categories.create(name: 'Evaluation Type-Interview')
 sub_category13 = category5.sub_categories.create(name: 'Evaluation Type-Experiment')
 sub_category14 = category5.sub_categories.create(name: 'Evaluation Type-Observation')
@@ -79,7 +79,7 @@ technique2 = Post.new(title: '3E- Expressing Emotion and Experience',
              '<li>Yong, L. T. (2013) ‘User Experience Testing: A Case Study for Mobile Devices’, Journal of Electronic Systems, 3(3), pp. 98–108.</li>'+
              '</ol>',
              user: User.first,
-             subcategory_list: 'Evaluation Type-Test Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Detailed Prototype',
+             subcategory_list: 'Evaluation Type-Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Detailed Prototype',
              freetag_list: 'Evaluation, Prototype Evaluation, Feedback Collection, User Participation, Short Term')
 technique2.save!
 
@@ -463,7 +463,7 @@ technique21 = Post.new(title: 'Desirability Testing with Product Research Cards'
              '<li>https://www.thedesignexchange.org/design_methods/228</li>'+
              '</ol>',
              user: User.first,
-             subcategory_list: 'Evaluation Type-Test Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Real Time, Design Phase-Draft Prototype',
+             subcategory_list: 'Evaluation Type-Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Real Time, Design Phase-Draft Prototype',
              freetag_list: 'Evaluation, Proto Evaluation, Feedback Collection, User Participation, Short Term')
 technique21.save!
 
@@ -671,7 +671,7 @@ technique31 = Post.new(title: 'Kano Analysis',
              '<li>Martin, B. and Hanington, B. (2012) Universal Methods of Design. Beverly: Rockport Publisher.</li>'+
              '</ol>',
              user: User.first,
-             subcategory_list: 'Evaluation Type-Test Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Real Time, Design Phase-Detailed Prototype',
+             subcategory_list: 'Evaluation Type-Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Real Time, Design Phase-Detailed Prototype',
              freetag_list: 'User Habit Investigation, User Participation, Short Term')
 technique31.save!
 
@@ -931,7 +931,7 @@ technique44 = Post.new(title: 'Product Experience Tracker',
              '<li>Jordan, P.W., 2003. Designing Pleasurable Products: An Introduction to the New Human Factors. CRC Press.</li>'+
              '</ol>',
              user: User.first,
-             subcategory_list: 'Evaluation Type-Test Questionnaire, User Participation-User Involved, Duration-Long Term, Time Dependency-Retrospective, Design Phase-Launching',
+             subcategory_list: 'Evaluation Type-Questionnaire, User Participation-User Involved, Duration-Long Term, Time Dependency-Retrospective, Design Phase-Launching',
              freetag_list: 'Evaluation, Released Version Evaluation, Feedback Collection, User Participation, Long Term')
 technique44.save!
 
@@ -1052,7 +1052,7 @@ technique50 = Post.new(title: 'Sentence Completion',
              '<li>http://infodesign.com.au/usabilityresources/scenarios/</li>'+
              '</ol>',
              user: User.first,
-             subcategory_list: 'Evaluation Type-Test Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Detailed Prototype',
+             subcategory_list: 'Evaluation Type-Questionnaire, User Participation-User Involved, Duration-Short Term, Time Dependency-Retrospective, Design Phase-Detailed Prototype',
              freetag_list: 'User Habit Investigation, Feedback Collection, User Participation, Short Term')
 technique50.save!
 
@@ -1315,7 +1315,7 @@ technique63 = Post.new(title: 'UX Curve',
              '<li>Yoo, J. and Pan, Y. (2014) ‘Expanded Customer Journey Map: Interaction Mapping Framework Based on Scenario’, in International Conference, HCI International 2014, pp. 550–555. doi: 10.1007/978-3-319-07854-0_96.</li>'+
              '<li>Davies, U. and Wilson, K. (2013) Design methods for developing services. London.</li>'+
              '</ol>',
-             subcategory_list: 'Evaluation Type-Test Questionnaire, User Participation-User Involved, Duration-Long Term, Time Dependency-Retrospective, Design Phase-Launching',
+             subcategory_list: 'Evaluation Type-Questionnaire, User Participation-User Involved, Duration-Long Term, Time Dependency-Retrospective, Design Phase-Launching',
              freetag_list: 'Evaluation, Released Version Evaluation, Feedback Collection, User Participation, Long Term')
 technique63.save!
 

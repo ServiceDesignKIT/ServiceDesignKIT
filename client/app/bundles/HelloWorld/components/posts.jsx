@@ -4,6 +4,8 @@ import FlatButton from 'material-ui/FlatButton';
 import AddToFavorite from './addToFavorite';
 import FlipCard from 'react-flipcard';
 
+import './styles/app.scss';
+
 export default class Posts extends Component {
 
   handleImageLoaded = (image) => {
