@@ -65,7 +65,7 @@ technique1 = Post.new(title: '3-12-3 Brainstorming',
 technique1.save!
 
 technique2 = Post.new(title: '3E- Expressing Emotion and Experience',
-             image: Rails.root.join("public/techniques/3E- Expressing Emotion and Experience.png").open,
+             image: Rails.root.join("public/techniques/3E-Expressing Emotion and Experience.png").open,
              body: '3E technique seeks to collect users’ emotion feedback without too much burden on the user. This technique helps users to express emotions after using a product or a service by writing and drawing on a 3E template.',
              instruction: '<ol>' + 
              '<li>Ask users to use a functional prototype.</li>'+

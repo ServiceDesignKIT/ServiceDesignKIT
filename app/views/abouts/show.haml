@@ -1,12 +1,66 @@
 = react_component("UserHeader", props: { withoutSearch: true, user: current_user })
 .container.about-container
-  %h1
-    About
-  %p.paragraph1
-    Service Design KIT is an ongoing research of the research group “Information Systems & Service Design” from Institute of Information Systems and Marketing (IISM) of Karlsruhe Institute of Technology (KIT). It was developed by E. Leung as a research project. The source code can be found on <a href="https://github.com/ServiceDesignKIT/ServiceDesignKIT">Github</a>, where you also can find further information from a development perspective.
-  = image_tag("about.png", :alt => "Picture")
-  %p.paragraph2
-    Service Design KIT seeks to not only support the selection of design techniques for digital services but also provide an open platform to allow people to share and discuss design techniques. We provide two classifications. On the left-hand side is an expert knowledge based classification. On the right-hand side is a classification created by the users of the web tool. The techniques are represented by flipcards, where people see a short description of the technique and on the backside instruction on how to execute the technique. People can add comments and tags to existing techniques or add new techniques to Service Design KIT. 
+  .row
+    .col-md-9
+      %h1
+        About
+      %p
+        Service Design KIT is an ongoing research of the research group “Information Systems & Service Design” from Institute of Information Systems and Marketing (IISM) of Karlsruhe Institute of Technology (KIT). It was developed by E. Leung as a research project. The source code can be found on <a href="https://github.com/ServiceDesignKIT/ServiceDesignKIT"><b>Github</b></a>, where you also can find further information from a development perspective.
+      %p
+        Service Design KIT seeks to not only support the selection of design techniques for digital services but also provide an open platform to allow people to share and discuss design techniques. We provide two classifications. On the left-hand side is an expert knowledge based classification. On the right-hand side is a classification created by the users of the web tool. The techniques are represented by flipcards, where people see a short description of the technique and on the backside instruction on how to execute the technique. People can add comments and tags to existing techniques or add new techniques to Service Design KIT. 
+      %p
+        %b Design Phase:
+        usually regarded as preconditions when choosing design techniques.
+        %br/
+        Planning: making a plan for an entire design process.
+        %br/
+        Draft Prototype: designers make a series of assessments to compare their prototypes with each other to select the appropriate ones.
+        %br/
+        Detailed Prototype: Design techniques focus on evaluating the design works in detail to modify the prototypes to get a stable version
+        %br/
+        Launching: Design techniques concentrate on collecting long-term feedback to help designers to improve digital services further and to prepare for the next iteration.
+      %p
+        %b Evaluation Type:
+        indicate how to evaluate an outcome of a design activity.
+        %br/
+        Observation: designers observe user behavior.
+        %br/
+        Questionnaire: to measure users’ goal achievement, satisfaction, etc. based on retrospective memory. 
+        %br/
+        Group Discussion: share ideas in a group to make a decision.
+        %br/
+        Interview: generate rich data that reveals users’ previous experience and prospect.
+        %br/
+        Experiment: reflect user behavior in a specific environment by means of concrete data.
+      %p
+        %b Time Dependency:
+        discriminates between immediate emotional feedback and feedback based on memory during interaction with digital services.
+        %br/
+        Retrospective: Design techniques indicate the dynamics of emotion based on users’ impressions of the experience and the goal achievement.
+        %br/
+        Real Time: Design techniques are applied to reveal various users’ immediate emotional feedback. 
+      %p
+        %b User Participation:
+        When real users should become involved depends on their roles and design purposes in different design phases.
+        %br/
+        User Involved: real users are involved in design processes.
+        %br/
+        Without Real User: real users are not involved in the design activity, but some fictitious user profiles may be used.
+      %p
+        %b Duration: 
+        is based on the specific time length in an iteration cycle of design processes.
+        %br/
+        Short Term: design activities are conducted in short time period.
+        %br/
+        Long Term: demonstrate how relationships between digital services and users evolve.
+        %br/
+        %br/
+        %br/
+        Besides the web tool, we also have paper printed cards for techniques. A new version is coming soon.
+      = image_tag("about.png", :alt => "Picture")
+
+
+
 
 
 
