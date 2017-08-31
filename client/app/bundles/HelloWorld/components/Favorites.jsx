@@ -10,6 +10,7 @@ import SelectedCategories from './selected-categories';
 import TopDiscussedTechniques from './TopDiscussedTechniques';
 import Footer from './Footer';
 import * as services from './services';
+import * as otherFunctions from './otherFunctions';
 import './styles/app.scss';
 
 export default class Favorites extends React.Component {
@@ -39,9 +40,9 @@ export default class Favorites extends React.Component {
     });
   }
 
-  handleToggleSubCategory(subCategory) {
+   handleToggleSubCategory(subCategory) {
     let params = {
-      selectedSubCategories: this.toggleItemInArr(this.state.selectedSubCategories, subCategory, 'subC'),
+      selectedSubCategories: otherFunctions.toggleItemInArr(this.state.selectedSubCategories, subCategory, 'subC'),
       selectedTags: this.state.selectedTags,
       search: this.state.search,
     }
@@ -49,39 +50,14 @@ export default class Favorites extends React.Component {
     this.filterPosts(params);
   }
 
-  handleToggleTag(tag) {
+   handleToggleTag(tag) {
     let params = {
       selectedSubCategories: this.state.selectedSubCategories,
-      selectedTags: this.toggleItemInArr(this.state.selectedTags, tag),
+      selectedTags: otherFunctions.toggleItemInArr(this.state.selectedTags, tag),
       search: this.state.search,
     }
     this.setState(params);
     this.filterPosts(params);
-  }
-
-  toggleItemInArr(arr, item, type) {
-    let array = arr;
-    const index = array.indexOf(item);
-    const index2 = array.indexOf(array.find(el => el.includes(item.split('-')[0])));
-
-    if (type == 'subC' && index2 !== -1) {
-      array = [
-        ...array.slice(0, index2),
-        ...array.slice(index2 + 1)
-      ]
-
-      if (index2 === index){
-        return array
-      }
-    }
-    if (index === -1) {
-      return array.concat(item)
-    } else {
-      return [
-        ...array.slice(0, index),
-        ...array.slice(index + 1)
-      ];
-    }
   }
 
   handleSetSearch(evt, search) {
@@ -106,35 +82,19 @@ export default class Favorites extends React.Component {
       }
 
       if (options.selectedTags && options.selectedTags.length){
-        tagsLength = this.isArraysIntersect(post.freetag_list, options.selectedTags)
+        tagsLength = otherFunctions.isTagsArraysIntersect(post.freetag_list, options.selectedTags)
       }
 
       if (options.selectedSubCategories && options.selectedSubCategories.length){
-        categoriesLength = this.isSubCatArraysIntersect(post.subcategory_list, options.selectedSubCategories)
+        categoriesLength = otherFunctions.isSubCatArraysIntersect(post.subcategory_list, options.selectedSubCategories)
       }
 
       return equalTitle && tagsLength && categoriesLength
     });
 
-    this.setState({ filteredPosts, is_load: true }, this.scroll);
+    this.setState({ filteredPosts, is_load: true }, otherFunctions.scroll);
   }
 
-  isSubCatArraysIntersect(arr1, arr2) {
-    return !arr2.map(e => e.split('-')[0].trim() )
-                .filter((v, i, a) => a.indexOf(v) === i)
-                .map(n =>  {
-      let arrs = arr2.filter(k => k.includes(n));
-
-      return this.isArraysIntersect(arr1, arrs);
-    }).includes(false)
-  }
-
-  scroll() {
-    const timerID = setInterval(() => {
-      window.scrollBy(0, -5); // go up by 5px
-      if (window.pageYOffset <= 0) clearInterval(timerID);
-    }, 5); // 5 millisec
-  }
 
   render() {
     return (

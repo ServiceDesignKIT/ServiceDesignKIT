@@ -14,7 +14,7 @@ export default class CommentCard extends Component {
                    .then(response => {
         if (response.status === 204){
           this.setState({content: ''})
-          parentPost.refs.container.success('Success Delete')
+          parentPost.refs.container.success('Comment deleted')
 
 
           delete comments[comments.findIndex(c => (c && c.id) == comment.id)]
@@ -29,7 +29,7 @@ export default class CommentCard extends Component {
 
           switch (error.response.status) {
             case 404:
-              parentPost.refs.container.warning('Not found this post')
+              parentPost.refs.container.warning('Couldnt find comment')
               break;
           }
         }else{
@@ -44,7 +44,7 @@ export default class CommentCard extends Component {
         <Card>
           <CardHeader
             title={ comment.user.username }
-            subtitle={ comment.created }
+            subtitle={ comment.created + " ago" }
             avatar={comment.user && comment.user.avatar.url || "/missing.png"}
           />
 

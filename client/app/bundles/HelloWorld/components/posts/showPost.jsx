@@ -154,7 +154,7 @@ export default class showPost extends React.Component {
                   onChange={this.handleChange.bind(this)}
                   className="tabs"
                   >
-                  <Tab label="Short description" value="a">
+                  <Tab label="Description" value="a">
                     <div>
                       <h2 style={styles.headline}>Short description</h2>
                       <Divider/>

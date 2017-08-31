@@ -88,7 +88,7 @@ export default class editPost extends Component {
                 .then(response => {
       console.log(response)
         if (response.status === 200){
-          this.refs.container.success('Success Updated')
+          this.refs.container.success('Successfully Updated')
 
           setTimeout(() => {
             Turbolinks.visit('/techniques/')

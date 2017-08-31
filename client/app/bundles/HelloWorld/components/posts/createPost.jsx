@@ -87,7 +87,7 @@ export default class createPost extends Component {
                 .then(response => {
       console.log(response)
         if (response.status === 201){
-          this.refs.container.success('Success Created')
+          this.refs.container.success('Successfully Created')
 
           setTimeout(() => {
             Turbolinks.visit('/techniques/')
