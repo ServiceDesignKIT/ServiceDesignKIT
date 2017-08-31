@@ -21,7 +21,7 @@ class HeaderRight extends Component {
     return (
       <div id="HeaderRight">
         <FlatButton label="Home" href={'/'}/>
-        <FlatButton label="Techniques List" href={'/admin/techniques/'}/>
+        <FlatButton label="Techniques Overview" href={'/admin/techniques/'}/>
         { this.props.user ?
           <RaisedButton  data-method="delete" label="Sign out" href="/users/sign_out"/> :
           <RaisedButton label="Login" href="/users/sign_in"/>
