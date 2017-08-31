@@ -30,7 +30,7 @@ export default class addToFavorite extends Component {
   render() {
     return (
       <IconButton
-        tooltip={ this.state.is_favorite ? "Remove from Favorite" : "Add to Favorite" }
+        tooltip={ this.state.is_favorite ? "Remove from Favorites" : "Add to Favorites" }
         onClick={(e) => this.addToFavorites(e, this.props.post.id)}
       >
         <FontIcon

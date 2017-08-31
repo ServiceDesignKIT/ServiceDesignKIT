@@ -116,7 +116,7 @@ export default class Login extends React.Component {
         <MuiThemeProvider muiTheme={muiTheme}>
           <div style={{textAlign: 'center'}}>
             <TextField
-              hintText="Login*"
+              hintText="Enter your email address"
               floatingLabelText="Login*"
               type="email"
               name="email"
@@ -126,7 +126,7 @@ export default class Login extends React.Component {
             /><br />
             <br />
             <TextField
-              hintText="Password Field"
+              hintText="Enter your password."
               floatingLabelText="Password*"
               type="password"
               name="password"

@@ -213,7 +213,6 @@ export default class UserEdit extends Component {
                             primary={true}/>
             </div>
           </div>
-
           <Footer/>
         </div>
       </MuiThemeProvider>
