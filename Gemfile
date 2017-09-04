@@ -32,6 +32,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 #for upload files #use one of
 gem 'paperclip', '~> 5.1'
 gem 'carrierwave', '~> 1.0'
+gem 'aws-sdk'
 #crop img
 gem 'mini_magick'
 gem 'rmagick', '~> 2.16'
