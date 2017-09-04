@@ -15,13 +15,13 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
-  config.cache_classes = true
   config.paperclip_defaults = {
-    :storage =>:s3,
-    :bucket => 'S3_BUCKET_NAME',
-    :access_key_id => 'AWS_ACCESS_KEY_ID',
-    :secret_access_key => 'AWS_SECRET_ACCESS_KEY',
-    :s3_region =>'AWS_REGION',
+  :storage => :s3,
+  :preserve_files => true,
+  :bucket => 'S3_BUCKET_NAME',
+  :access_key_id => 'S3_ACCESS_KEY',
+  :secret_access_key => 'S3_SECRET_KEY',
+  :s3_region => 'S3_REGION'
 }
 
   # Eager load code on boot. This eager loads most of Rails and
