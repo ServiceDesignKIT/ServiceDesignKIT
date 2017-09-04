@@ -141,7 +141,7 @@ export default class Login extends React.Component {
                 onCheck={this.handleCheckbox.bind(this)}
               />
             </div>
-            <RaisedButton label="LogIn" onClick={() => this.createSession()} style={style} backgroundColor={blue500} labelColor={white}/>
+            <RaisedButton label="LogIn" onClick={() => this.createSession()} style={style} backgroundColor={blue600} labelColor={white}/>
             <div>
               <List>
                 <ListItem href="/users/sign_up" >Sign up</ListItem>

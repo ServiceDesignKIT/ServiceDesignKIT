@@ -231,7 +231,7 @@ export default class editPost extends Component {
           <div style={styles.column}>
             <Tags
               tags={this.state.tags}
-              addKeys={13, 9, 188}
+              // addKeys={13, 9, 188}
               placeholder="Add a tag"
               onAdded={this.onTagAdded.bind(this)}
               onRemoved={this.onTagRemoved.bind(this)} />

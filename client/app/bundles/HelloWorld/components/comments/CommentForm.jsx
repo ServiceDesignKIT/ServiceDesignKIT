@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import * as commentServices from '../../services/commentServices';
+import {grey900, blue600, blue700, darkBlack, pinkA200, grey100, grey500, white, grey300, fullBlack, blue50, blue500,indigo500, indigo700, redA200} from 'material-ui/styles/colors';
 
 export default class CommentForm extends React.Component {
   constructor(props) {
@@ -26,7 +28,7 @@ export default class CommentForm extends React.Component {
         if (response.status === 201){
           this.setState({content: ''})
 
-          parent.refs.container.success('Successfully Created')
+          parent.refs.container.success('New comment added')
 
           parent.refs.CommentsList.setState({
             comments: [].concat(response.data, comments)
@@ -60,6 +62,14 @@ export default class CommentForm extends React.Component {
     this.setState({content: e.target.value})
   }
 
+ componentDidMount(){
+  document.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter'){
+      this.createComment()
+    }
+  }, false)
+}
+
   render() {
     const { user } = this.props
     return(
@@ -74,7 +84,7 @@ export default class CommentForm extends React.Component {
             <TextField
               hintText="Write a comment..."
               hintStyle={{bottom: 'inherit', left: 50, top: 13, color: '#909090'}}
-              style={{width: '100%'}}
+              style={{width: '98%', left: 10}}
               multiLine={true}
               rows={3}
               value={this.state.content}
@@ -83,8 +93,8 @@ export default class CommentForm extends React.Component {
 
           </div>
           <div style={{float: 'right'}}>
-            <FlatButton label="Submit"
-                        onClick={this.createComment} />
+            <RaisedButton label="Submit"
+                        onClick={this.createComment} backgroundColor={blue600} labelColor={white}/>
           </div>
         </div>
       )
