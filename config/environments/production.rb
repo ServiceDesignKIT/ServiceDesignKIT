@@ -15,14 +15,17 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
-  config.paperclip_defaults = {
-  :storage => :s3,
-  :preserve_files => true,
-  :bucket => 'S3_BUCKET_NAME',
-  :access_key_id => 'S3_ACCESS_KEY',
-  :secret_access_key => 'S3_SECRET_KEY',
-  :s3_region => 'S3_REGION'
-}
+   config.paperclip_defaults = {
+        storage: :s3,
+        s3_region: ENV["AWS_REGION"],
+        s3_host_name: "s3-eu-central-1.amazonaws.com",
+        s3_credentials: {
+          # s3_host_name: ENV["AWS_HOST_NAME"],
+          bucket: ENV["S3_BUCKET_NAME"],
+          access_key_id: ENV["AWS_ACCESS_KEY_ID"],
+          secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]
+          }
+  }
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
