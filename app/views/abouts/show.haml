@@ -1,14 +1,32 @@
 = react_component("UserHeader", props: { withoutSearch: true, user: current_user })
 .container.about-container
   .row
-    .col-md-9
+    .col-md-5
       %h1
         About
       %p
-        Service Design KIT is an ongoing research of the research group “Information Systems & Service Design” from Institute of Information Systems and Marketing (IISM) of Karlsruhe Institute of Technology (KIT). It was developed by E. Leung as a research project. The source code can be found on <a href="https://github.com/ServiceDesignKIT/ServiceDesignKIT"><b>Github</b></a>, where you also can find further information from a development perspective.
+        ServiceDesignKIT provides a comprehensive overview of existing design techniques for digital services and supports their selection and application. 
+  .row
+    .col-md-5
       %p
-        Service Design KIT seeks to not only support the selection of design techniques for digital services but also provide an open platform to allow people to share and discuss design techniques. We provide two classifications. On the left-hand side is an expert knowledge based classification. On the right-hand side is a classification created by the users of the web tool. The techniques are represented by flipcards, where people see a short description of the technique and on the backside instruction on how to execute the technique. People can add comments and tags to existing techniques or add new techniques to Service Design KIT. 
+        Each design technique is represented by flipcards including a short description as well as a step-by-step instruction on how to execute it. It combines a top-down taxonomy-based classification and a bottom-up tag-based classification with an interactive search function allowing easy access to the design techniques. ServiceDesignKIT is an open platform allowing people to contribute with comments and add further design techniques. 
+  .row
+    .col-md-3
       %p
+        ServiceDesignKIT is provided by the research group <a href="http://issd.iism.kit.edu/">"Information Systems & Service Design"</a> (Prof. Dr. Alexander Maedche) of the <a href="http://www.iism.kit.edu/">Institute of Information Systems and Marketing (IISM)</a> and <a href="http://www.ksri.kit.edu/">Karlsruhe Service Research Institute (KSRI)</a> at the <a href="http://www.kit.edu/">Karlsruhe Institute of Technology (KIT)</a>, Germany. 
+    .col-md-2
+      .logo
+        = image_tag("kit_logo.png", :alt => "KIT-Logo", class:"kit_logo")
+  .row
+    .col-md-5
+      %p
+      ServiceDesignKIT was developed by Erwin Leung as part of a research project carried out by Xuanhui Liu. The source code can be found on <a href="https://github.com/ServiceDesignKIT/ServiceDesignKIT"></a>, where you also can find further information from a technical perspective.
+  .row
+    .col-md-5  
+      %p
+      %h3
+        More information to the taxonomy-based classification
+      %p  
         %b Design Phase:
         usually regarded as preconditions when choosing design techniques.
         %br/
@@ -57,7 +75,7 @@
         %br/
         %br/
         Besides the web tool, we also have paper printed cards for techniques. A new version is coming soon.
-      = image_tag("about.png", :alt => "Picture")
+      = image_tag("about.png", :alt => "Cards")
 
 
 
