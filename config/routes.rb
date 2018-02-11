@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :techniques
 
   resources :favorites, only: :index
+  resources :submitted, only: :index
   resource :about, only: :show
   resource :contact, only: :show
   resource :impressum, only: :show
