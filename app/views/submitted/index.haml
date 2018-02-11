@@ -1,0 +1,5 @@
+= react_component("UserHeader", props: { user: current_user })
+.container
+  %h1 Submitted Techniques
+  = react_component("Submitted", props: { user: current_user,
+        posts: Post.joins(:user).where(users: {username: current_user.username}) })

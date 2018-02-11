@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SelectedCategories from './selected-categories';
 import CategoriesFilter from './categories-filter';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import * as services from './services';
 import * as otherFunctions from './otherFunctions';
 import TagsCloud from './tags-cloud';
-import ReactDom from 'react-dom';
 import Loading from 'react-loader';
 import Header from './Header';
 import Posts from './posts';
@@ -20,7 +19,7 @@ const ToastMessageFactory = React.createFactory(ToastMessage.animation);
 export default class App extends React.Component {
 
  constructor(props){
-   super(props)
+   super(props);
    this.state = {
     data: [],
     user: this.props.user,
@@ -49,7 +48,7 @@ export default class App extends React.Component {
       selectedSubCategories: otherFunctions.toggleItemInArr(this.state.selectedSubCategories, subCategory, 'subC'),
       selectedTags: this.state.selectedTags,
       search: this.state.search,
-    }
+    };
     this.setState(params);
     this.filterPosts(params);
   }
@@ -59,7 +58,7 @@ export default class App extends React.Component {
       selectedSubCategories: this.state.selectedSubCategories,
       selectedTags: otherFunctions.toggleItemInArr(this.state.selectedTags, tag),
       search: this.state.search,
-    }
+    };
     this.setState(params);
     this.filterPosts(params);
   }
@@ -69,7 +68,7 @@ export default class App extends React.Component {
       selectedSubCategories: this.state.selectedSubCategories,
       selectedTags: this.state.selectedTags,
       search: search,
-    }
+    };
     this.setState(params);
     this.filterPosts(params);
   }

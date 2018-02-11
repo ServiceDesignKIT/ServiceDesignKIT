@@ -200,6 +200,13 @@ body {
 
   .tag {
     margin: 0 5px 5px 0 !important;
+    background-color: #BBBBBB !important;
+    &:hover {
+      background-color: #868686 !important;
+    }
+    &.selected {
+      background-color: #308cde !important;
+    }
   }
 }
 

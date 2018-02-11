@@ -16,6 +16,7 @@ import EditPassword  from '../components/devise/EditPassword';
 import UserEdit      from '../components/devise/UserEdit';
 import ResetPassword  from '../components/devise/ResetPassword';
 import ConfirmationInstruction  from '../components/devise/ConfirmationInstruction';
+import Submitted from "../components/Submitted";
 
 
 // This is how react_on_rails can see the HelloWorld in the browser.
@@ -27,6 +28,7 @@ document.addEventListener("turbolinks:load", () => {
 ReactOnRails.register({
   App,
   Favorites,
+  Submitted,
   AddToFavorite,
   UserHeader,
   Footer,

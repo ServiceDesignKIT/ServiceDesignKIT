@@ -84,7 +84,7 @@ export default class categoryRow extends Component {
     return(
         <div>
           <div style={styles.column}>
-            <div style={{color: '#909090',
+            <div style={{color: '#000',
                          marginBottom: 5,
                          marginTop: 15}}>
               { category.name }
@@ -93,7 +93,7 @@ export default class categoryRow extends Component {
                         borderTop: 'none',
                         borderLeft: 'none',
                         borderRight: 'none',
-                        margin: 0}}></hr>
+                        margin: 0}}/>
           </div>
 
           <div style={styles.column}>

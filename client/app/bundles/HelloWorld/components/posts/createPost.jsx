@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
-import Divider from 'material-ui/Divider';
-import Checkbox from 'material-ui/Checkbox';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
-import {List, ListItem} from 'material-ui/List';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import * as postServices from '../../services/postServices';
 import '../styles/app.scss';
@@ -12,7 +9,6 @@ import 'react-tagging-input/src/component/scss/styles.scss';
 import { ToastContainer, ToastMessage } from "react-toastr";
 import RichTextEditor from 'react-rte';
 import Tags from 'react-tagging-input';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 import CategoryRow from './categoryRow';
 import Paper from 'material-ui/Paper';
 import Avatar from 'material-ui/Avatar';
@@ -212,6 +208,7 @@ export default class createPost extends Component {
           <div style={styles.column}>
             <Tags
               tags={this.state.tags}
+              addKeys={[13, 9]}
               onAdded={this.onTagAdded.bind(this)}
               onRemoved={this.onTagRemoved.bind(this)} />
           </div>

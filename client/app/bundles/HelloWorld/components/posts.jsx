@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardActions, CardMedia, CardTitle, CardText } from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import { Card, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import AddToFavorite from './addToFavorite';
 import FlipCard from 'react-flipcard';
 
@@ -10,17 +9,17 @@ export default class Posts extends Component {
 
   handleImageLoaded = (image) => {
     let img = image.currentTarget;
-    let NaH = img.naturalHeight
-    let NaW = img.naturalWidth
+    let NaH = img.naturalHeight;
+    let NaW = img.naturalWidth;
 
     if (NaH > NaW && NaH - NaW > 50){
-      img.style.width = '70%'
-      img.style.height = '200px'
+      img.style.width = '70%';
+      img.style.height = '200px';
       img.style.minWidth = 0
     }else{
       img.style.height = '200px'
     }
-  }
+  };
 
   render() {
     return (

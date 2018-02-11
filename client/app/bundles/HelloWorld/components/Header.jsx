@@ -74,6 +74,7 @@ class DrawerMenu extends Component {
     if (user){
       list = list.concat([
         <ListItem  href="/favorites" key={4}>Favorites</ListItem>,
+        <ListItem  href="/submitted">Submitted</ListItem>,
         <ListItem  href="/techniques/new/" key={5}>Submit a Technique</ListItem>,
         <ListItem primaryText="Edit User"
                   key={6}
@@ -124,6 +125,7 @@ class HeaderRight extends Component {
           { user ?
             [
               <FlatButton key={5} label="Favorites" href="/favorites" labelColor={white}/>,
+              <FlatButton label="Submitted" href="/submitted" labelColor={fullBlack}/>,
               <RaisedButton key={6} label="Submit a Technique" href="/techniques/new/" labelColor={fullBlack} />,
               <Avatar src={user.avatar.url || "/missing.png"}
                       style={{cursor: 'pointer'}}
