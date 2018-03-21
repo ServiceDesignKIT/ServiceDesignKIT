@@ -65,8 +65,8 @@ export default class categoryRow extends Component {
 
     return data.map((item) => {
       let item_name = item.name;
-      if (item.name.includes('-')){
-        item_name = item.name.split('-')[1]
+      if (item.name.includes('#')){
+        item_name = item.name.split('#')[1]
       }
 
       return (

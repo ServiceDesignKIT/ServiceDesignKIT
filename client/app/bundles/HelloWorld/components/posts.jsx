@@ -45,7 +45,7 @@ export default class Posts extends Component {
                 <div style={{padding: '0 16px'}}>
                 {post.subcategory_list.map((tag, index) => (
                   <div key={index} className="category-tag">
-                    { tag && tag.includes('-') ? tag.split('-')[1] : tag }
+                    { tag && tag.includes('#') ? tag.split('#')[1] : tag }
                   </div>
                  ))}
                 </div>
