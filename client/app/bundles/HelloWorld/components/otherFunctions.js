@@ -3,7 +3,7 @@ export function toggleItemInArr(arr, item, type) {
   const index = array.indexOf(item);
   const index2 = array.indexOf(array.find(el => el.includes(item.split('-')[0])));
 
-  if (type == 'subC' && index2 !== -1) {
+  if (type === 'subC' && index2 !== -1) {
     array = [
       ...array.slice(0, index2),
       ...array.slice(index2 + 1)

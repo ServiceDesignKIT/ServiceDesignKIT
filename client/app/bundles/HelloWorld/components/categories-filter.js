@@ -15,12 +15,12 @@ export default class CategoriesFilter extends Component {
         }
       });
       return list;
-    }, {}); // {C1: [SC1, Sc2]}
+    }, {}); // {C1: [SC1, SC2]}
   }
 
   getCategoryAndSubCategoryNames(subCatArr) {
     return subCatArr.map(subCat => {
-      const [category, subCategory] = subCat.split('-'); // C1-SC3
+      const [category, subCategory] = subCat.split('-'); // C1#SC3
       return { category, subCategory };
     });
   }
