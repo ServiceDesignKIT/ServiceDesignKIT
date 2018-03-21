@@ -82,7 +82,7 @@ export default class showPost extends React.Component {
       let sub_categories_tags = cat.sub_categories.map(scat => {
         scat
         let scat_name = scat;
-        if (scat.includes('#')){
+        if (scat.includes('-')){
           scat_name = scat.split('-')[1]
         }
         return <span className="stag">{ scat_name } </span>
