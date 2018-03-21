@@ -1,7 +1,7 @@
 export function toggleItemInArr(arr, item, type) {
   let array = arr;
   const index = array.indexOf(item);
-  const index2 = array.indexOf(array.find(el => el.includes(item.split('-')[0])));
+  const index2 = array.indexOf(array.find(el => el.includes(item.split('#')[0])));
 
   if (type === 'subC' && index2 !== -1) {
     array = [
@@ -32,7 +32,7 @@ export function isArraysIntersect(arr1, arr2) {
 };
 
 export function isSubCatArraysIntersect(arr1, arr2) {
-  return !arr2.map(e => e.split('-')[0].trim() )
+  return !arr2.map(e => e.split('#')[0].trim() )
               .filter((v, i, a) => a.indexOf(v) === i)
               .map(n =>  {
     let arrs = arr2.filter(k => k.includes(n));
