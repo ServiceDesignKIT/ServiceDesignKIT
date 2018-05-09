@@ -43,7 +43,7 @@ sub_category15 = category5.sub_categories.create(name: 'Evaluation Type-Group Di
 
 
 technique1 = Post.new(title: '3-12-3 Brainstorming',
-             image: Rails.root.join("public/techniques/3-12-3 Brainstorming.png").open,
+             image: ::Rails.root.join("public/techniques/3-12-3 Brainstorming.png").open,
              body: '3-12-3 Brainstorming is a time-limited brainstorming technique, which enables a group (not exceed 10 group members) to focus on generating, collecting, and discussing ideas.',
              instruction: '<ol>' + 
              '<li>Define a topic or a problem.</li>'+
